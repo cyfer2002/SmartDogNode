@@ -3,7 +3,7 @@ var nodemailer = require('nodemailer')
 var router = express.Router();
 
 var transporter = nodemailer.createTransport('smtps://smartdog@gmx.fr:Mm2ppSDsf@mail.gmx.com');
-var receiver = "cyfer2002@gmail.com"
+var receiver = "smartdogs.educanine@gmail.com"
 var subject = "SmartDog-contact"
 
 var title = "Smart'Dogs"
