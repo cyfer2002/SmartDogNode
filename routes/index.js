@@ -10,17 +10,37 @@ var title = "Smart'Dogs"
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('accueil', { title: title });
+  res.render('accueil', { title: title, id : "accueil" });
 });
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('contact', {title: title});
+  res.render('contact', {title: title, id : "contact"});
 });
 
 /* GET prestations page. */
 router.get('/prestation', function(req, res, next) {
-  res.render('prestation', {title: title});
+  res.render('prestation', {title: title, id : "prestation"});
+});
+
+/* GET qui suis-je page. */
+router.get('/qui', function(req, res, next) {
+  res.render('qui', {title: title, id : "qui"});
+});
+
+/* GET education page. */
+router.get('/education', function(req, res, next) {
+  res.render('education', {title: title, id : "education"});
+});
+
+/* GET comportement page. */
+router.get('/comportement', function(req, res, next) {
+  res.render('comportement', {title: title, id : "comportement"});
+});
+
+/* GET boutique page. */
+router.get('/boutique', function(req, res, next) {
+  res.render('boutique', {title: title, id : "boutique"});
 });
 
 

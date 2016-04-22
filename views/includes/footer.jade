@@ -16,3 +16,9 @@ script(src='/javascripts/bootstrap.js')
 script(src='/docs/assets/js/_vendor/holder.js')
 script(src='http://code.jquery.com/jquery-1.12.0.min.js')
 script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+script(type='text/javascript').
+    function chargement() {
+
+        $('#'+"#{id}").addClass('active');
+    }
+    window.onload = chargement();
